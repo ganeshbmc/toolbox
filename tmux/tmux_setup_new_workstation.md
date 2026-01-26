@@ -51,6 +51,10 @@ nano ~/.tmux.conf
 Paste **exactly**:
 
 ```tmux
+# Better colors inside tmux
+set -g default-terminal "tmux-256color"
+set -ga terminal-overrides ",xterm-256color:Tc"
+
 # Enable Mouse
 set -g mouse on
 
