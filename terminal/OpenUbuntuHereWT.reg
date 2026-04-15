@@ -1,0 +1,17 @@
+Windows Registry Editor Version 5.00
+
+; Right-click on empty space inside a folder
+[HKEY_CLASSES_ROOT\Directory\Background\shell\OpenUbuntuHereWT]
+@="Open Ubuntu here (Windows Terminal)"
+"Icon"="wt.exe"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\OpenUbuntuHereWT\command]
+@="cmd.exe /c wt -p Ubuntu wsl.exe -d Ubuntu --cd \"%V\""
+
+; Right-click on a folder icon
+[HKEY_CLASSES_ROOT\Directory\shell\OpenUbuntuHereWT]
+@="Open Ubuntu here (Windows Terminal)"
+"Icon"="wt.exe"
+
+[HKEY_CLASSES_ROOT\Directory\shell\OpenUbuntuHereWT\command]
+@="cmd.exe /c wt -p Ubuntu wsl.exe -d Ubuntu --cd \"%1\""
